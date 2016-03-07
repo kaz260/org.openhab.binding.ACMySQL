@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-Description: This is the ACMySQL binding of the open Home Autom
+ ation Bus (openHAB)
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-SymbolicName: org.openhab.binding.ACMySQL
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,JavaSE-1.7
+Bundle-Vendor: openHAB.org
+Bundle-DocURL: http://www.openhab.org
+Import-Package: org.apache.commons.lang,org.openhab.core.binding,org.o
+ penhab.core.events,org.openhab.core.items,org.openhab.core.library.it
+ ems,org.openhab.core.library.types,org.openhab.core.types,org.openhab
+ .model.item.binding,org.osgi.framework,org.osgi.service.cm;version="1
+ .4.0",org.osgi.service.component,org.osgi.service.event,org.slf4j
+Service-Component: OSGI-INF/binding.xml, OSGI-INF/genericbindingprovid
+ er.xml
+Bundle-Name: openHAB ACMySQL Binding
+Bundle-Version: 1.8.0.201603070441
+Bundle-ClassPath: lib/mysql-connector-java-5.1.35-bin.jar,lib/commons-
+ lang3-3.3.2.jar,lib/org.openhab.binding.ACDBCommon-1.8.0-SNAPSHOT.jar
+ ,.
+Private-Package: org.openhab.binding.ACMySQL.internal
+Ignore-Package: org.openhab.binding.ACMySQL.internal
+
